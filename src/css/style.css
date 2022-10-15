@@ -1,0 +1,178 @@
+*::-webkit-scrollbar {
+    width: 14px;
+}
+
+*::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 10px;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: yellow;
+    border-radius: 30px;
+    border: 3px solid black;
+}
+
+body {
+    background-image: url(../imagens/wallpaper-pikachu.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    font-family: 'VT323', monospace;
+    color: #f3f3f3;
+    min-height: 100vh;
+}
+
+.cartao {
+    opacity: 130%;
+    width: 370px;
+    border: 4px double yellow;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cartao .minhas-informacoes {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cartao .minhas-informacoes img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #00b7ff;
+}
+
+.cartao .minhas-informacoes .nome {
+    font-size: 26px;
+}
+
+.cartao .minhas-informacoes .cargo {
+    font-size: 23px;
+    color: #b8bbc5;
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
+
+.cartao .abas {
+    display: flex;
+}
+
+.cartao .abas .aba {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+span:first-child {
+    color: rgb(255, 178, 35);
+}
+
+span {
+    color: #1947db;
+}
+
+span:last-child {
+    color: yellow;
+}
+
+.cartao .abas img {
+    width: 30px;
+}
+
+.cartao .abas .aba.selecionado {
+    background-color: #262626;
+}
+
+.cartao .informacoes-abas {
+    background-color: #262626;
+}
+
+.cartao .abas .aba:hover {
+    background-color: #414141;
+}
+
+.informacoes-abas .informacao {
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.informacoes-abas .informacao.selecionado {
+    display: block;
+}
+
+.informacoes-abas .sub-titulo {
+    margin-bottom: 25px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.informacoes-abas .descricao p:last-child {
+    margin-top: 5px;
+}
+
+.informacoes-abas .descricao {
+    font-size: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.curriculo {
+    border: 2px solid rgb(0, 58, 0);
+    background-color: green;
+}
+
+.curriculo:hover {
+    background-color: rgb(0, 58, 0);
+}
+
+.linkedIn:hover {
+    background-color: rgb(0, 69, 218);
+}
+
+.linkedIn {
+    border: 2px solid rgb(0, 69, 218);
+    background-color: #006eff;
+}
+
+.github:hover {
+    background-color: rgb(54, 0, 54);
+}
+
+.github {
+    border: 2px solid rgb(54, 0, 54);
+    background-color: purple;
+}
+
+.redes-sociais li a {
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+    width: 250px;
+    color: #f3f3f3;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
